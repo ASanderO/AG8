@@ -1,0 +1,63 @@
+#include<stdio.h>
+
+
+
+#include<stdlib.h>
+
+
+
+int main(void)
+
+
+
+{
+
+
+
+ 
+
+
+
+  float SalarioB, Salario, IR, INSS, Sindicato, Liquido, desconto;
+
+  
+
+
+
+  printf("Informe seu salario bruto:\n ");
+
+  scanf("%f",&SalarioB);
+
+  IR =  SalarioB * 0.15;
+
+  INSS = SalarioB * 0.11;
+
+  Sindicato = SalarioB * 0.03;
+
+  desconto = IR + INSS + Sindicato;
+
+  Salario = SalarioB - desconto;
+
+  
+
+  printf("Seu salario bruto e de : %0.2f\n", SalarioB);
+
+  printf("===========Descontos===========\n");
+
+  printf("(-)IR                 R$ %0.2f\n", IR);
+
+  printf("(-)INSS               R$ %0.2f\n", INSS);
+
+  printf("(-)Sindicato          R$ %0.2f\n", Sindicato);
+
+  printf("Seu total de descontos foram R$ %0.2f\n",desconto);
+
+  printf("Seu salario Liquido mensal e : R$ %0.2f\n",Salario);
+
+  
+
+  return 0;
+
+
+
+  }
